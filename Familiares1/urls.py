@@ -16,12 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from Familiares1.views import bienvenida, template_desc
+from Familiares1.views import bienvenida, index
 from app_familiares.views import familiares_vis
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('bienvenida/', bienvenida, name='bienvenida'),
-    path('template_desc/',template_desc,name='template_desc'),
+    path('index/',index,name='index'),
     path('familiares_vis/',familiares_vis, name='familiares_vis')
 ]

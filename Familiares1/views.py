@@ -8,5 +8,5 @@ from django.shortcuts import render
 def bienvenida(request):
     return HttpResponse('<h1>Bienvenido/a a mi primer MVT</h1>')
 
-def template_desc(request):
+def index(request):
     return render(request,'template1.html',context = {})
