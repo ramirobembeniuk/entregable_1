@@ -9,4 +9,7 @@ def bienvenida(request):
     return HttpResponse('<h1>Bienvenido/a a mi primer MVT</h1>')
 
 def index(request):
-    return render(request,'template1.html',context = {})
+    return render(request,'index.html',context = {})
+
+def contacto(request):
+    return render(request,'contacto.html')
