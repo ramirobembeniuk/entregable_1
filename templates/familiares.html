@@ -1,14 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block contenido %}
     <h3>El familiar nº1 es {{fam_1.nombre}}. Su fecha de nacimiento es: {{fam_1.fecha_nacimiento}}. Observaciones: {{fam_1.observaciones}}</h3>
     <h3>El familiar nº2 es {{fam_2.nombre}}. Su fecha de nacimiento es: {{fam_2.fecha_nacimiento}}. Observaciones: {{fam_2.observaciones}}</h3>
     <h3>El familiar nº3 es {{fam_3.nombre}}. Su fecha de nacimiento es: {{fam_3.fecha_nacimiento}}. Observaciones: {{fam_3.observaciones}}</h2>
-</body>
-</html>
+{% endblock %}
